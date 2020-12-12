@@ -17,7 +17,7 @@ DEBASE is supposed to stabilize towards the target range. In line with the visio
 
 ## Technical specification
 SP1 will take in DAI/DEBASE LPs and provide rewards in DEBASE. 
-The rewards are given out when n>= k positive rebases over a period of m rebase cycles, where k is sampled from a normal distribution with a known mean and standard deviation. 
+The rewards are given out when n>= k positive rebases over a period of m rebase cycles occur, where k is sampled from a normal distribution with a known mean and standard deviation. 
 The randomness incentivizes continous liquidity, as otherwise the rewards system can be manipulated if the blocktime of the rewards were known beforehand.
 Furthermore, we use Chainlink VRF as a source of randomness given that on-chain randomness can be manipulated by miners.
 The exact procedure to get the randomzied threshold is as follows: 
