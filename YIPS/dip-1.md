@@ -38,4 +38,4 @@ The exact procedure to get the randomzied threshold is as follows:
 * Normal distribution parameters
   * Integer[100]: Array filled with the numbers from Normal Distribution
   * Integer: Expected Value of the Normal Distribution (mean)
-  * Integer: Stanard deviation of the Normal Distribution
+  * Integer: Stantard deviation of the Normal Distribution
