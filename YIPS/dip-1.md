@@ -24,7 +24,7 @@ The exact procedure to get the randomzied threshold is as follows:
 1. Preload an array of 100 integers, each of which is first sampled from a normal distribution of known Mean and SD. Once the array is provided, the integrity of the distribution can be estimated by governance. 
 2. Have a counter that starts from zero and increments in value at every positive rebase. 
 2. Use RNG at every rebase cycle, and mod the obtained randomn number with the size of array to pick one value from the array.
-3. At every rebase cycle, check if value obtained from 2. is >= the counter value.
+3. At every rebase cycle, check if integer obtained from 2. is >= the counter value.
 
 ### Configurable parameters
 
