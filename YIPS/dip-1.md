@@ -2,7 +2,7 @@
 yip: 1
 title: Composing with Stabilizer-pool 1
 status: WIP
-author: anon18382, @jusTaPunkk (@PunkUnknown)
+author(s): anon18382, @jusTaPunkk (@PunkUnknown)
 discussions-to: https://debaseonomics.medium.com/debase-v88-new-dawn-e6bc213796a3
 created: 12-11-2020
 ---
@@ -39,3 +39,6 @@ The exact procedure to get the randomzied threshold is as follows:
   * Integer[100]: Array filled with the numbers from Normal Distribution
   * Integer: Expected Value of the Normal Distribution (mean)
   * Integer: Stantard deviation of the Normal Distribution
+
+### Additional information
+Pool design by @jusTaPunkk, with inputs from @anon18382 on randomization
