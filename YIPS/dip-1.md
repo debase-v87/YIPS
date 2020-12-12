@@ -41,4 +41,4 @@ The exact procedure to get the randomzied threshold is as follows:
   * Integer: Stantard deviation of the Normal Distribution
 
 ### Additional information
-Pool design by @jusTaPunkk, with inputs from @anon18382 on randomization
+Pool design by @PunkUnknown, with inputs from @anon18382 on randomization
