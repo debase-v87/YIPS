@@ -7,7 +7,7 @@ discussions-to: https://debaseonomics.medium.com/debase-v88-new-dawn-e6bc213796a
 created: 12-11-2020
 ---
 ## Simple Summary
-Proposal to compose Stabilizer-pool 1 (SP1) with the Debaseonomics protocol, which will stabilize DEBASE to upper limit of target range or above, during positive rebase cycles.
+Proposal to compose Stabilizer-pool 1 (SP1) with the Debaseonomics protocol, which will stabilize DEBASE, during positive rebase cycles.
 
 ## Abstract
 SP1 will use a randomized threshold of positive rebases, to inflate part of the supply to the DEBASE/DAI LPs and stabilize the price of DEBASE during positive rebase cycles.
