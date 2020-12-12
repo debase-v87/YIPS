@@ -1,25 +1,30 @@
 ---
 yip: 1
-title: Composing with S-pool 1
+title: Composing with Stabilizer-pool 1
 status: WIP
 author: anon18382, @jusTaPunkk (@PunkUnknown)
 discussions-to: https://debaseonomics.medium.com/debase-v88-new-dawn-e6bc213796a3
 created: 12-11-2020
 ---
 ## Simple Summary
-We propose S-pool 1, which will stabilize Debase to target during positive rebase cycles.
+Proposal to compose Stabilizer-pool 1 (SP1) with the Debaseonomics protocol, which will stabilize DEBASE to target during positive rebase cycles.
 
 ## Abstract
-This stabilizer will use a randomized threshold of positive rebases, to inflate part of the supply to the LPs and stabilize prize of Debase during positive rebase cycles.
+SP1 will use a randomized threshold of positive rebases, to inflate part of the supply to the LPs and stabilize prize of Debase during positive rebase cycles.
 
 ## Motivation
-DEBASE is supposed to stabilize towards the target range. In line with the vision of Debaseonomics to use s-pools to stabilize DEBASE price, s-pool 1 will do so in expansion cycles (periods of high number of positive rebases, consecutively or otherwise).  
+DEBASE is supposed to stabilize towards the target range. In line with the vision of Debaseonomics to use stabilizer-pools to stabilize DEBASE price, sp1 will do so in expansion cycles (periods of high number of positive rebases, consecutive or otherwise).  
 
 ## Technical specification
-The s-pool will take in DAI/DEBASE LPs and provide rewards in DEBASE. 
-The rewards are given out after k positive rebases over a period of n rebase cycles, where k is sampled from a normal distribution with a known mean and standard deviation. 
+SP1 will take in DAI/DEBASE LPs and provide rewards in DEBASE. 
+The rewards are given out when n>= k positive rebases over a period of m rebase cycles, where k is sampled from a normal distribution with a known mean and standard deviation. 
 The randomness incentivizes continous liquidity, as otherwise the rewards system can be manipulated if the blocktime of the rewards were known beforehand.
 Furthermore, we use Chainlink VRF as a source of randomness given that on-chain randomness can be manipulated by miners.
+The exact procedure to get the randomzied threshold is as follows: 
+1. Preload an array of 100 integers, each of which is first sampled from a normal distribution of known Mean and SD. Once the array is provided, the integrity of the distribution can be estimated by governance. 
+2. Have a counter that starts from zero and increments in value at every positive rebase. 
+2. Use RNG at every rebase cycle, and mod the obtained randomn number with the size of array to pick one value from the array.
+3. At every rebase cycle, check if value obtained from 2. is >= the counter value.
 
 ### Configurable parameters
 
