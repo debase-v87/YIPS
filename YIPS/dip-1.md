@@ -13,7 +13,7 @@ Proposal to compose Stabilizer-pool 1 (SP1) with the Debaseonomics protocol, whi
 SP1 will use a randomized threshold of positive rebases, to inflate part of the supply to the DEBASE/DAI LPs and stabilize the price of DEBASE during positive rebase cycles.
 
 ## Motivation
-DEBASE is supposed to stabilize towards the target range. In line with the vision of Debaseonomics to use stabilizer-pools to stabilize DEBASE price, SP1 will do so in expansion cycles (periods of high number of positive rebases, consecutive or otherwise). Since the rewards are revoked when a non-negative rebase is hit, LPS are incentivized to keep price above the upper limit of target range.  
+DEBASE is supposed to stabilize towards the target range. In line with the vision of Debaseonomics to use stabilizer-pools to stabilize DEBASE price, SP1 will do so in expansion cycles (periods of high number of positive rebases, consecutive or otherwise). Since the rewards are revoked when a non-negative rebase is hit, Liquidity providers are incentivized to keep price above the upper limit of target range.  
 
 ## Technical specification
 SP1 will take in DAI/DEBASE LPs and provide rewards in DEBASE. 
